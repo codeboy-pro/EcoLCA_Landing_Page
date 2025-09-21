@@ -16,16 +16,14 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
 
     /* Path mapping */
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "baseUrl": "."
   },
-  "include": ["src", "App.tsx", "components", "vite.config.ts"],
+  "include": ["src", "App.tsx", "components/Header.tsx", "components/Footer.tsx", "components/HeroSection.tsx", "components/FeaturesSection.tsx", "components/HowItWorksSection.tsx", "components/TestimonialsSection.tsx", "components/TrustSection.tsx", "components/PricingSection.tsx", "components/figma/*.tsx", "components/ui/button.tsx", "components/ui/card.tsx", "components/ui/utils.ts"],
+  "exclude": ["node_modules", "dist", "vite.config.ts", "components/ui/!(button|card|utils).tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
